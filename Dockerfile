@@ -7,6 +7,6 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copy source files so server.py is at /app/server.py
-COPY src/alex3/ .
+COPY src/echo/ .
 
 CMD ["mcp", "run", "/app/server.py", "-t", "sse"]
