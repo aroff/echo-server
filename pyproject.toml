@@ -1,0 +1,17 @@
+[project]
+name = "alex3"
+version = "0.1.0"
+description = "A mcp server project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [ "mcp>=1.6.0",]
+[[project.authors]]
+name = "Alexandre Oliveira"
+email = "alexandre@55seeds.com"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+alex3 = "server:main"
