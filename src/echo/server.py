@@ -63,6 +63,6 @@ async def get_weather(city_name: str) -> int:
         int: The temperature in the city
     """
     import random
-    return 24  # random.randint(4, 30)
+    return 23  # random.randint(4, 30)
 
 # mcp.run('sse')
