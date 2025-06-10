@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 COPY src/echo/ .
 
 # Use non-root user
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
+# RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+# USER appuser
 
 CMD ["mcp", "run", "/app/server.py", "-t", "sse"]
